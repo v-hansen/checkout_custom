@@ -1,0 +1,16 @@
+{
+  "image#logo": {
+    "props": {
+      "src": "assets/logo.png",
+      "maxHeight": 40,
+      "link": {
+        "url": "/"
+      }
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  }
+}

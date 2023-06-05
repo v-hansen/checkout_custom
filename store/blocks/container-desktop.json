@@ -1,0 +1,51 @@
+{
+  "flex-layout.row#container-desktop": {
+    "children": [
+      "flex-layout.col#checkout-desktop",
+      "flex-layout.col#items-summary-desktop"
+    ],
+    "props": {
+      "blockClass": "checkoutContainer",
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "paddingBottom": 3,
+      "paddingTop": 5
+    }
+  },
+  "flex-layout.col#checkout-desktop": {
+    "children": [
+      "flex-layout.row#header-layout#desktop",
+      "checkout-step-group",
+      "footer-layout#checkout"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "60%",
+      "paddingRight": 8,
+      "rowGap": 5
+    }
+  },
+  "flex-layout.row#header-layout#desktop": {
+    "children": [
+      "header-layout#desktop"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "paddingBottom": 3,
+      "paddingTop": 5,
+      "blockClass": "checkoutHeaderDesktop"
+    }
+  },
+  "header-layout#desktop": {
+    "children": [
+      "image#logo",
+      "flex-layout.col#spacer",
+      "flex-layout.col#login-checkout"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "mainHeaderDesktop"
+    }
+  }
+}

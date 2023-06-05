@@ -1,0 +1,78 @@
+{
+  "stack": "nodejs",
+  "memory": 1024,
+  "ttl": 60,
+  "timeout": 40,
+  "minReplicas": 10,
+  "maxReplicas": 100,
+  "routes": {
+    "addItem": {
+      "path": "/checkout-io/add-item",
+      "public": true
+    },
+    "cancelOrder": {
+      "path": "/checkout-io/cancel-order",
+      "public": true
+    },
+    "setOrderFormCustomData": {
+      "path": "/checkout-io/set-custom-data",
+      "public": true
+    },
+    "updateItems": {
+      "path": "/checkout-io/update-items",
+      "public": true
+    },
+    "updateOrderFormIgnoreProfile": {
+      "path": "/checkout-io/update-ignore-profile",
+      "public": true
+    },
+    "updateOrderFormPayment": {
+      "path": "/checkout-io/update-payment",
+      "public": true
+    },
+    "profile": {
+      "path": "/checkout-io/profile",
+      "public": true
+    },
+    "updateOrderFormShipping": {
+      "path": "/checkout-io/update-shipping",
+      "public": true
+    },
+    "address": {
+      "path": "/checkout-io/address/:countryCode/:postalCode",
+      "public": true
+    },
+    "simulation": {
+      "path": "/checkout-io/simulation",
+      "public": true
+    },
+    "updateOrderFormMarketingData": {
+      "path": "/checkout-io/update-marketing-data",
+      "public": true
+    },
+    "updateOrderFormClientPreferencesData": {
+      "path": "/checkout-io/update-client-preferences-data",
+      "public": true
+    },
+    "updateOrderFormCheckin": {
+      "path": "/checkout-io/update-checkin",
+      "public": true
+    },
+    "orderForm": {
+      "path": "/checkout-io/orderform",
+      "public": true
+    },
+    "orderFormRaw": {
+      "path": "/checkout-io/raw-orderform",
+      "public": true
+    },
+    "newOrderForm": {
+      "path": "/checkout-io/new-orderform",
+      "public": true
+    },
+    "changeToAnonymousUser": {
+      "path": "/checkout-io/change-to-anonymous-user",
+      "public": true
+    }
+  }
+}

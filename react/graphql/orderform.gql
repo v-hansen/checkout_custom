@@ -1,0 +1,204 @@
+query checkoutOrder {
+  checkoutOrder {
+    orderFormId
+    canEditData
+    clientPreferencesData {
+      locale
+      optinNewsLetter
+    }
+    clientProfileData {
+      email
+      firstName
+      lastName
+      phone
+      isCorporate
+      corporateName
+      corporateDocument
+      corporatePhone
+      document
+      documentType
+      stateInscription
+      tradeName
+    }
+    items {
+      id
+      name
+      detailUrl
+      imageUrl
+      skuName
+      productId
+      productRefId
+      quantity
+      uniqueId
+      refId
+      ean
+      priceValidUntil
+      price
+      tax
+      listPrice
+      sellingPrice
+      rewardValue
+      isGift
+      parentItemIndex
+      parentAssemblyBinding
+      seller
+      productCategoryIds
+      productCategories
+      measurementUnit
+      unitMultiplier
+    }
+    loggedIn
+    paymentData {
+      availableAccounts {
+        accountId
+        paymentSystem
+        paymentSystemName
+        cardNumber
+      }
+      paymentSystems {
+        id
+        name
+        groupName
+        validator {
+          regex
+          mask
+          cardCodeRegex
+          cardCodeMask
+          weights
+          useCvv
+          useExpirationDate
+          useCardHolderName
+          useBillingAddress
+        }
+        stringId
+        requiresDocument
+        isCustom
+        description
+        requiresAuthentication
+        dueDate
+      }
+      payments {
+        paymentSystem
+        bin
+        accountId
+        tokenId
+        installments
+        referenceValue
+        value
+      }
+      updateStatus
+    }
+    salesChannel
+    sellers {
+      id
+      name
+    }
+    shippingData {
+      address {
+        addressId
+        cacheId
+        id
+        userId
+        receiverName
+        complement
+        neighborhood
+        country
+        state
+        number
+        street
+        geoCoordinates
+        postalCode
+        city
+        reference
+        addressName
+        addressType
+      }
+      availableAddresses {
+        addressId
+        cacheId
+        id
+        userId
+        receiverName
+        complement
+        neighborhood
+        country
+        state
+        number
+        street
+        geoCoordinates
+        postalCode
+        city
+        reference
+        addressName
+        addressType
+      }
+      selectedAddresses {
+        addressId
+        cacheId
+        id
+        userId
+        receiverName
+        complement
+        neighborhood
+        country
+        state
+        number
+        street
+        geoCoordinates
+        postalCode
+        city
+        reference
+        addressName
+        addressType
+      }
+      logisticsInfo {
+        addressId
+        itemId
+        itemIndex
+        selectedSla
+        slas {
+          availableDeliveryWindows {
+            startDateUtc
+            endDateUtc
+            price
+            lisPrice
+            tax
+          }
+          deliveryChannel
+          deliveryWindow {
+            startDateUtc
+            endDateUtc
+            price
+            lisPrice
+            tax
+          }
+          id
+          name
+          price
+          shippingEstimate
+          shippingEstimateDate
+        }
+      }
+    }
+    storePreferencesData {
+      countryCode
+      currencyCode
+      timeZone
+      currencyFormatInfo {
+        currencyDecimalDigits
+        currencyDecimalSeparator
+        currencyGroupSeparator
+        startsWithCurrencySymbol
+      }
+      currencySymbol
+    }
+    totalizers {
+      id
+      name
+      value
+    }
+    userProfileId
+    userType
+    value
+  }
+}

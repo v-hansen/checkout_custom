@@ -1,0 +1,88 @@
+{
+  /* This is the interface of the Cart,
+  whatever you put as blocks will be rendered on /cart
+  This is currently using the native vtex app */
+  "store.checkout.cart": {
+    "blocks": [
+      "checkout-cart"
+    ]
+  },
+  /* This is the interface of the Cart-add,
+  whatever you put as blocks will be rendered on /cart-add
+  This is currently using the native vtex app */
+  "store.checkout.cart-add": {
+    "blocks": [
+      "checkout-cart-add"
+    ]
+  },
+  /* This is the interface of the profile Identification,
+  whatever you put as blocks will be rendered on /identification */
+  "store.checkout.identification": {
+    "blocks": [
+      "checkout-container#identification"
+    ]
+  },
+  "checkout-container#identification": {
+    "children": [
+      "flex-layout.row#identification"
+    ]
+  },
+  "flex-layout.row#identification": {
+    "children": [
+      "checkout-identification"
+    ],
+    "props": {
+      "blockClass": "identificationWrapper",
+      "preserveLayoutOnMobile": true,
+      "width": "100%",
+      "fullWidth": true
+    }
+  },
+  /* This is the interface of the Checkout,
+  whatever you put as blocks will be rendered on /checkout */
+  "store.checkout.order-form": {
+    "blocks": [
+      "checkout-container"
+    ]
+  },
+  /* Remember that this container is
+  just the wrapper for your blocks */
+  "checkout-container": {
+    "children": [
+      "responsive-layout.desktop#checkout",
+      "responsive-layout.tablet#checkout"
+    ]
+  },
+  "responsive-layout.desktop#checkout": {
+    "children": [
+      "flex-layout.row#container-desktop"
+    ]
+  },
+  "responsive-layout.tablet#checkout": {
+    "children": [
+      "flex-layout.row#container-tablet"
+    ]
+  },
+  /* These are the rendered steps */
+  "checkout-step-group": {
+    "children": [
+      "profile-step",
+      "address-step",
+      "delivery-step",
+      "payment-step"
+    ]
+  },
+  /* The Summary, totalizers
+  and place order button */
+  "checkout-custom-summary#desktop": {
+    "children": [
+      "custom-summary",
+      "custom-place-order"
+    ]
+  },
+  "checkout-custom-summary#tablet": {
+    "children": [
+      "custom-summary"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "flex-layout.row#container-tablet": {
+    "children": [
+      "flex-layout.col#checkout-tablet"
+    ],
+    "props": {
+      "blockClass": "checkoutContainer",
+      "paddingTop": 6,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#checkout-tablet": {
+    "children": [
+      "flex-layout.row#header-layout-tablet",
+      "checkout-step-group#checkout-tablet",
+      "flex-layout.row#items-summary-tablet",
+      "flex-layout.row#custom-place-order-tablet",
+      "footer-layout#checkout-tablet"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "checkoutColumnTablet"
+    }
+  },
+  "flex-layout.row#header-layout-tablet": {
+    "children": [
+      "header-layout#tablet"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "paddingBottom": 3,
+      "paddingTop": 5,
+      "blockClass": "checkoutHeaderTablet"
+    }
+  },
+  "header-layout#tablet": {
+    "children": [
+      "image#logo",
+      "flex-layout.col#spacer",
+      "flex-layout.col#login-checkout"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "mainHeaderTablet"
+    }
+  },
+  "checkout-step-group#checkout-tablet": {
+    "children": [
+      "checkout-step-group"
+    ],
+    "props": {
+      "blockClass": "checkoutTablet"
+    }
+  },
+  "flex-layout.row#custom-place-order-tablet": {
+    "children": [
+      "custom-place-order"
+    ],
+    "props": {
+      "blockClass": "customPlaceOrderTablet"
+    }
+  }
+}

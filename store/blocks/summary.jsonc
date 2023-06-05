@@ -1,0 +1,25 @@
+{
+  "flex-layout.col#items-summary-desktop": {
+    "children": [
+      "checkout-custom-summary#desktop"
+    ],
+    "props": {
+      "blockClass": "itemsSummary",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#items-summary-tablet": {
+    "children": [
+      "flex-layout.col#items-summary-tablet"
+    ]
+  },
+  "flex-layout.col#items-summary-tablet": {
+    "children": [
+      "checkout-custom-summary#tablet"
+    ],
+    "props": {
+      "blockClass": "itemsSummary",
+      "preventVerticalStretch": true
+    }
+  }
+}

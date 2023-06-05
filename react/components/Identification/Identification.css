@@ -1,0 +1,14 @@
+.buttonContainer :global(.vtex-button) {
+  border: none;
+  min-height: 1.875rem;
+}
+
+.buttonContainer :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+@media only screen and (min-width: 40em) {
+  .box {
+    max-width: 450px;
+  }
+}

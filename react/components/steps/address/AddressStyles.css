@@ -1,0 +1,35 @@
+.locationInput :global(.vtex-input) input {
+  width: auto;
+  flex: 1;
+  min-width: 0;
+}
+
+.locationInput :global(.vtex-input__suffix) {
+  padding: 0;
+}
+
+.locationInput :global(.vtex-button) {
+  min-height: auto;
+  margin: .125rem;
+  align-self: stretch;
+}
+
+@media only screen and (min-width: 40em) {
+  .locationInput :global(.vtex-input-prefix__group) {
+    height: 2.5rem;
+  }
+
+  .locationInput :global(.vtex-button) {
+    width: 3.25rem;
+  }
+
+  .locationInput :global(.vtex-button__label) {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 20em) {
+  .locationInput {
+    width: 80% ;
+  }
+}

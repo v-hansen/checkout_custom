@@ -1,0 +1,16 @@
+{
+  "flex-layout.col#login-checkout": {
+    "children": [
+      "login#checkout"
+    ],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+  "login#checkout": {
+    "props": {
+      "hideIconLabel": true,
+      "showIconProfile": true
+    }
+  }
+}

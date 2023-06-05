@@ -1,0 +1,78 @@
+{
+  "store.checkout": {
+    "allowConditions": true,
+    "component": "*",
+    "before": [
+      "header.full.checkout"
+    ],
+    "after": [
+      "footer.checkout",
+      "pixels"
+    ],
+    "preview": {
+      "type": "transparent",
+      "height": 600
+    }
+  },
+  "store.checkout.cart": {
+    "around": [
+      "homeWrapper"
+    ],
+    "allowed": [
+      "checkout-cart"
+    ],
+    "preview": {
+      "type": "box",
+      "height": 1400
+    }
+  },
+  "store.checkout.cart-add": {
+    "around": [
+      "homeWrapper"
+    ],
+    "allowed": [
+      "checkout-cart-add"
+    ]
+  },
+  "store.checkout.order-form": {},
+  "store.checkout.identification": {},
+  "header.full.checkout": {
+    "component": "Empty"
+  },
+  "footer.checkout": {
+    "component": "Empty"
+  },
+  "checkout-container": {
+    "component": "Container",
+    "composition": "children"
+  },
+  "checkout-step-group": {
+    "component": "StepGroup",
+    "composition": "children"
+  },
+  "profile-step": {
+    "component": "ProfileStep"
+  },
+  "address-step": {
+    "component": "AddressStep"
+  },
+  "delivery-step": {
+    "component": "DeliveryStep"
+  },
+  "payment-step": {
+    "component": "PaymentStep"
+  },
+  "checkout-identification": {
+    "component": "Identification"
+  },
+  "checkout-custom-summary": {
+    "component": "SummaryContainer",
+    "composition": "children"
+  },
+  "custom-summary": {
+    "component": "CheckoutSummary"
+  },
+  "custom-place-order": {
+    "component": "PlaceOrder"
+  }
+}

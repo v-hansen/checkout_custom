@@ -1,0 +1,50 @@
+{
+  "vendor": "CHANGE_ME",
+  "name": "checkout-container-custom",
+  "version": "0.0.1",
+  "title": "Custom Checkout Example",
+  "description": "",
+  "builders": {
+    "assets": "0.x",
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x",
+    "node": "6.x",
+    "graphql": "1.x",
+    "styles": "2.x"
+  },
+  "dependencies": {
+    "vtex.store-graphql": "2.x",
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.styleguide": "9.x",
+    "vtex.formatted-price": "0.x",
+    "vtex.shipping-estimate-translator": "2.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.store-footer": "2.x",
+    "vtex.store-header": "2.x",
+    "vtex.login": "2.x",
+    "vtex.responsive-layout": "0.x",
+    "vtex.store": "2.x",
+    "vtex.checkout-cart": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "*"
+      }
+    },
+    {
+      "name": "graphql-query"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,57 @@
+{
+  "footer-layout#checkout": {
+    "children": ["flex-layout.col#footer"],
+    "props": {
+      "blockClass": "checkoutFooter"
+    }
+  },
+  "footer-layout#checkout-tablet": {
+    "children": ["flex-layout.col#footer-tablet"],
+    "props": {
+      "blockClass": "checkoutFooterTablet"
+    }
+  },
+
+  "flex-layout.col#footer": {
+    "children": ["flex-layout.row#footer-text"],
+    "props": {
+      "blockClass": "footerContainer"
+    }
+  },
+  "flex-layout.col#footer-tablet": {
+    "children": ["flex-layout.row#footer-text"],
+    "props": {
+      "blockClass": "footerContainer"
+    }
+  },
+
+  "flex-layout.row#footer-text": {
+    "children": ["flex-layout.col#footer-notice", "powered-by#checkout"],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "footerText"
+    }
+  },
+  "powered-by#checkout": {
+    "props": {
+      "blockClass": "checkout"
+    }
+  },
+  "flex-layout.col#footer-notice": {
+    "children": ["rich-text#store-copyright"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#store-copyright": {
+    "props": {
+      "text": "Headless Checkout test &copy; 2021",
+      "textColor": "c-muted-1",
+      "font": "t-body",
+      "blockClass": "checkoutCopyright"
+    }
+  }
+}

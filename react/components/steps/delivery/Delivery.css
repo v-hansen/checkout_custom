@@ -1,0 +1,11 @@
+.scheduledDropdowns :global(.vtex-styleguide-9-x-container) {
+  height: 40px;
+}
+
+.scheduleActive .scheduledDropdowns {
+  display: block !important;
+}
+
+.scheduledDropdowns {
+  display: none;
+}

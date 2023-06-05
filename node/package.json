@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "co-body": "^6.0.0",
+    "ramda": "^0.25.0",
+    "axios": "^0.19.0",
+    "apollo-datasource-rest": "^0.1.5",
+    "cookie": "^0.3.1",
+    "graphql": "^14.0.0",
+    "graphql-tools": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/co-body": "^0.0.3",
+    "@types/cookie": "^0.3.2",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.0.0",
+    "@types/ramda": "types/npm-ramda#dist",
+    "@vtex/api": "6.45.12",
+    "@vtex/test-tools": "^1.0.0",
+    "@vtex/tsconfig": "^0.5.6",
+    "typescript": "3.9.7",
+    "vtex.flex-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.20.1/public/@types/vtex.flex-layout",
+    "vtex.formatted-price": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.formatted-price@0.5.0/public/@types/vtex.formatted-price",
+    "vtex.login": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.55.0/public/@types/vtex.login",
+    "vtex.pixel-interfaces": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-interfaces@1.1.1/public/_types/react",
+    "vtex.pixel-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.8.0/public/@types/vtex.pixel-manager",
+    "vtex.responsive-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout",
+    "vtex.rich-text": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.15.0/public/@types/vtex.rich-text",
+    "vtex.shipping-estimate-translator": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shipping-estimate-translator@2.2.3/public/@types/vtex.shipping-estimate-translator",
+    "vtex.store": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.127.1/public/@types/vtex.store",
+    "vtex.store-components": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.0/public/@types/vtex.store-components",
+    "vtex.store-footer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.26.0/public/@types/vtex.store-footer",
+    "vtex.store-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.157.1/public/@types/vtex.store-graphql",
+    "vtex.store-header": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-header@2.28.0/public/@types/vtex.store-header",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.3/public/@types/vtex.styleguide"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit --pretty"
+  },
+  "version": "0.2.0"
+}

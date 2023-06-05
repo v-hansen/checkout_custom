@@ -1,0 +1,43 @@
+.summaryProductList {
+  list-style-type: none;
+  padding-left: 0;
+}
+.orderedSteps li {
+  margin: 0;
+  position: relative;
+}
+
+.container{
+  display: inline-flex;
+  flex-flow: row;
+  place-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.image{
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: 45px;
+  width: 45px;
+}
+
+.description{
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 100%;
+}
+
+.price{
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: auto;
+}
+
